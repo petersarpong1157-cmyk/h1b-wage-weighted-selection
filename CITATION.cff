@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use these reproducibility materials, please cite them using the metadata below."
+title: "Wage-Weighted H-1B Selection and the Distribution of New-Employment Positions: Reproducibility Materials"
+authors:
+  - family-names: "Sarpong"
+    given-names: "Peter"
+type: software
+version: 1.0.0
+repository-code: "https://github.com/petersarpong1157-cmyk/h1b-wage-weighted-selection"
+keywords:
+  - H-1B
+  - Labor Condition Applications
+  - wage levels
+  - high-skilled immigration
+  - counterfactual analysis
+  - occupational distribution
+license: null
