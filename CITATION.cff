@@ -5,7 +5,8 @@ authors:
   - family-names: "Sarpong"
     given-names: "Peter"
 type: software
-version: 1.0.0
+version: 2.0.2
+date-released: 2026-09-16
 repository-code: "https://github.com/petersarpong1157-cmyk/h1b-wage-weighted-selection"
 keywords:
   - H-1B
@@ -14,4 +15,3 @@ keywords:
   - high-skilled immigration
   - counterfactual analysis
   - occupational distribution
-license: null
