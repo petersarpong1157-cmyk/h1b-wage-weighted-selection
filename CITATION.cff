@@ -5,8 +5,9 @@ authors:
   - family-names: "Sarpong"
     given-names: "Peter"
 type: software
-version: 2.0.2
+version: 2.0.3
 date-released: 2026-09-16
+doi: "10.5281/zenodo.22803293"
 repository-code: "https://github.com/petersarpong1157-cmyk/h1b-wage-weighted-selection"
 keywords:
   - H-1B
