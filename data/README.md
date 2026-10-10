@@ -43,3 +43,8 @@ These LCA positions are not unique beneficiaries, USCIS registrations, petitions
 ## Occupation analysis
 
 Occupations are grouped by valid two-digit SOC major groups. Six FY2025 records representing two new-employment positions and three FY2026 records representing two positions are excluded from the occupation-specific analysis because their extracted major-group prefixes are nonstandard.
+
+
+## License note
+
+The repository's original code and documentation are licensed under the MIT License. The DOL source workbooks are not redistributed here and are not covered by the repository's MIT license.
