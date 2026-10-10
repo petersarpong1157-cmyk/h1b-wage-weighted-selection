@@ -123,4 +123,6 @@ The GitHub repository now reflects the corrected matched-period analysis. If the
 
 ## License
 
-No license has yet been assigned to this repository. The underlying DOL data are public federal administrative data and are not authored by the repository owner.
+The original code and documentation in this repository are licensed under the **MIT License**. See [LICENSE](LICENSE).
+
+The U.S. Department of Labor source data are not redistributed with this repository and are not covered by the repository's MIT license.
