@@ -1,6 +1,6 @@
 # Wage-Weighted H-1B Selection and Employment Distribution
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22803293.svg)](https://doi.org/10.5281/zenodo.22803293)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23282614.svg)](https://doi.org/10.5281/zenodo.23282614)
 
 Reproducibility materials for Peter Sarpong's study of how the FY2027 H-1B wage-level weighting structure changes the distribution of U.S. Department of Labor (DOL) Labor Condition Application (LCA) new-employment positions across wage levels, occupations, reported employer names, and worksite states.
 
@@ -117,9 +117,9 @@ Independent Researcher, United States
 
 ## Citation and archive status
 
-Zenodo DOI: **10.5281/zenodo.22803293**
+Zenodo DOI: **10.5281/zenodo.23282614**
 
-The GitHub repository now reflects the corrected matched-period analysis. If the Zenodo record still points to an earlier release, a new Zenodo version should be deposited so the archived release matches the corrected GitHub code and documentation.
+The corrected matched-period release is archived on Zenodo under the DOI above.
 
 ## License
 
