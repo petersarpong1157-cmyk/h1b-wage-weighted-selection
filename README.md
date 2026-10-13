@@ -19,7 +19,7 @@ The analyzed wage-level subset excludes **33,463 LCAs / 27,583 new positions** i
 
 See [the independent audit results](results/2026-10-13-independent-audit.md) for tabulated sensitivity findings, sample reconciliation, exclusions, and limitations.
 
-**Archive status:** This GitHub documentation update does *not* update the existing Zenodo DOI. The revised standalone R audit script and its raw output CSVs are not yet archived in this commit, so do not treat the repository as a complete reproduction package for the new robustness tables until those are added and tested.
+**Archive status:** The revised audit script and its output CSVs are now committed on `main`, but the previously published Zenodo v3.6.6 snapshot (DOI `10.5281/zenodo.23353801`) predates these file additions. A new GitHub release and Zenodo archive version are needed if the archived software snapshot is to include them.
 
 ## Study design
 
@@ -104,13 +104,15 @@ The original DOL Excel files are not stored in this repository.
 
 ## Reproducibility
 
-Run:
+To reproduce the **independent audit and robustness outputs**, download the DOL workbooks (see `data/README.md`), set `input_dir` in the low-memory script, then run in a clean R session:
 
 ```r
-source("analysis/h1b-wage-weighted-selection.R")
+source("analysis/H1B_Independent_Audit_Low_Memory.R")
 ```
 
-The script:
+The resulting CSVs correspond to the checked-in `results/01_*.csv` through `results/08_*.csv` and the deduplication tie-count report. The script was executed by the researcher in R 4.5.2 on Windows 11. This update does not independently establish cross-platform reproducibility. For the original occupation, employer and state figure pipeline, use `analysis/h1b-wage-weighted-selection.R`.
+
+The original figure-generation script:
 
 1. loads and harmonizes the quarterly DOL disclosure files;
 2. constructs the matched nine-month periods;
