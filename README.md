@@ -6,6 +6,21 @@ Reproducibility materials for Peter Sarpong's study of how the FY2027 H-1B wage-
 
 > **Important update:** The analysis now uses matched nine-month periods rather than comparing FY2025 Q4 alone with the cumulative FY2026 Q3 file. FY2025 Q1-Q3 covers October 1, 2024 through June 30, 2025; FY2026 Q1-Q3 covers October 1, 2025 through June 30, 2026.
 
+
+## October 2026 independent audit and robustness update
+
+The source-workbook audit reconciled both primary matched-period samples exactly to the manuscript: **401,626 LCAs / 235,613 new-employment positions** in FY2025 Q1–Q3 and **351,375 LCAs / 241,528 new-employment positions** in FY2026 Q1–Q3.
+
+Sensitivity checks using one unit per LCA and excluding the ten largest reported employer names (in each period) retain the broad negative Level I and positive Level III–IV redistribution pattern. **Level II is sensitive to the unit:** in FY2025 Q1–Q3 its change is +1.00 percentage point when weighting new-employment positions, but −5.63 percentage points when weighting application counts.
+
+The analyzed wage-level subset excludes **33,463 LCAs / 27,583 new positions** in FY2025 and **40,800 LCAs / 33,788 new positions** in FY2026 that lack an observed wage level I–IV.
+
+**Interpretation caution:** `PW_WAGE_LEVEL` is the employer-reported *prevailing-wage* level in the DOL LCA file and is not necessarily the offered-wage-equivalent level governing USCIS FY2027 weighted selection. The findings are LCA-based distributional counterfactuals, **not** estimates of beneficiaries selected, visa outcomes, or causal effects.
+
+See [the independent audit results](results/2026-10-13-independent-audit.md) for tabulated sensitivity findings, sample reconciliation, exclusions, and limitations.
+
+**Archive status:** This GitHub documentation update does *not* update the existing Zenodo DOI. The revised standalone R audit script and its raw output CSVs are not yet archived in this commit, so do not treat the repository as a complete reproduction package for the new robustness tables until those are added and tested.
+
 ## Study design
 
 This project is an **LCA-based distributional counterfactual**. It does not simulate USCIS beneficiary selection and does not estimate actual H-1B selection probabilities, selected beneficiaries, petitions, or visa issuances. DOL LCA records do not identify the universe of unique cap-subject beneficiaries or USCIS registrations.
