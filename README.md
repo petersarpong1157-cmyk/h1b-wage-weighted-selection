@@ -1,11 +1,23 @@
 # Wage-Weighted H-1B Selection and Employment Distribution
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23282614.svg)](https://doi.org/10.5281/zenodo.23282614)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23353950.svg)](https://doi.org/10.5281/zenodo.23353950)
 
 Reproducibility materials for Peter Sarpong's study of how the FY2027 H-1B wage-level weighting structure changes the distribution of U.S. Department of Labor (DOL) Labor Condition Application (LCA) new-employment positions across wage levels, occupations, reported employer names, and worksite states.
 
 > **Important update:** The analysis now uses matched nine-month periods rather than comparing FY2025 Q4 alone with the cumulative FY2026 Q3 file. FY2025 Q1-Q3 covers October 1, 2024 through June 30, 2025; FY2026 Q1-Q3 covers October 1, 2025 through June 30, 2026.
 
+
+## October 19, 2026: new measurement-sensitivity evidence (not yet archived)
+
+An additional labour-market measurement study investigates the difference between weighting LCA applications and weighting requested new-employment positions. **The positive-position-only check materially changes the original full-sample result**, so claims of invariance across population definitions are not supported.
+
+- FY2025 Level II: full-sample application-versus-position discrepancy **+6.63 pp**; top-ten-standardized-name exclusion **+7.44 pp**; P99 position cap **+7.25 pp**; positive-position applications only **−1.35 pp**.
+- FY2026 Level II: corresponding discrepancies **+4.59**, **+3.28**, **+4.53**, and **+0.589 pp**.
+- Within-occupation components dominate the full-population symmetric decomposition (FY2025 **5.99 pp**; FY2026 **3.87 pp**). These are accounting decompositions, not causal effects.
+
+Read the [October 19 verified console-results and limitations](results/2026-10-19-labour-measurement-extension.md). The optional sensitivity script is [here](analysis/H1B_Optional_Tail_Trim_Sensitivity.R).
+
+**Reproducibility / archive caution:** The RStudio-exported analysis CSVs numbered 09–19 have not all been provided for this GitHub update. These newer results are **not** represented as part of the prior Zenodo v3.6.7 snapshot (DOI `10.5281/zenodo.23353950`). A new Zenodo version should only be published after the complete outputs, relevant scripts, manuscript, and version metadata are checked together.
 
 ## October 2026 independent audit and robustness update
 
@@ -19,7 +31,7 @@ The analyzed wage-level subset excludes **33,463 LCAs / 27,583 new positions** i
 
 See [the independent audit results](results/2026-10-13-independent-audit.md) for tabulated sensitivity findings, sample reconciliation, exclusions, and limitations.
 
-**Archive status:** The revised audit script and its output CSVs are now committed on `main`, but the previously published Zenodo v3.6.6 snapshot (DOI `10.5281/zenodo.23353801`) predates these file additions. A new GitHub release and Zenodo archive version are needed if the archived software snapshot is to include them.
+**Archive status:** v3.6.7 (DOI `10.5281/zenodo.23353950`) is the prior Zenodo release. The October 19 measurement extension is newer than that release and has not yet been deposited as a complete reproducible Zenodo version.
 
 ## Study design
 
