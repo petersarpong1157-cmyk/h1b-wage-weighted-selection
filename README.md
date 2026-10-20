@@ -17,7 +17,7 @@ An additional labour-market measurement study investigates the difference betwee
 
 Read the [October 19 verified console-results and limitations](results/2026-10-19-labour-measurement-extension.md). The optional sensitivity script is [here](analysis/H1B_Optional_Tail_Trim_Sensitivity.R).
 
-**Reproducibility / archive caution:** The RStudio-exported final analysis CSVs numbered 09–19 have now been supplied and locally reviewed. Only the three compact verification CSVs (13, 17_FINAL, and 19) are currently committed under [`results/2026-10-19/`](results/2026-10-19/); the other eight files remain in the curated release-candidate ZIP awaiting repository upload. These newer results are **not** represented as part of the prior Zenodo v3.6.7 snapshot (DOI `10.5281/zenodo.23353950`). A new Zenodo version should only be published after the complete outputs, relevant scripts, manuscript, and version metadata are checked together.
+**Reproducibility / archive caution:** The RStudio-exported final analysis CSVs numbered 09–19 have now been supplied and locally reviewed. All eleven final numbered analysis CSVs (09–19) are committed under [`results/2026-10-19/`](results/2026-10-19/) and the supplementary R extension is available in [`analysis/`](analysis/). The revised DOCX manuscripts and Figure 5 image are retained in the separate release-candidate package; those binary files have not yet been committed to the repository. These newer results are **not** represented as part of the prior Zenodo v3.6.7 snapshot (DOI `10.5281/zenodo.23353950`). A new Zenodo version should only be published after the complete outputs, relevant scripts, manuscript, and version metadata are checked together.
 
 ## October 2026 independent audit and robustness update
 
