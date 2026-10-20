@@ -5,9 +5,9 @@ authors:
   - family-names: "Sarpong"
     given-names: "Peter"
 type: software
-version: 3.6.7
-date-released: 2026-10-14
-doi: "10.5281/zenodo.23353950"
+version: 3.7.0
+date-released: 2026-10-20
+doi: "10.5281/zenodo.23486897"
 repository-code: "https://github.com/petersarpong1157-cmyk/h1b-wage-weighted-selection"
 license: MIT
 keywords:
