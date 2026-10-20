@@ -1,13 +1,13 @@
 # Wage-Weighted H-1B Selection and Employment Distribution
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23353950.svg)](https://doi.org/10.5281/zenodo.23353950)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23486897.svg)](https://doi.org/10.5281/zenodo.23486897)
 
 Reproducibility materials for Peter Sarpong's study of how the FY2027 H-1B wage-level weighting structure changes the distribution of U.S. Department of Labor (DOL) Labor Condition Application (LCA) new-employment positions across wage levels, occupations, reported employer names, and worksite states.
 
 > **Important update:** The analysis now uses matched nine-month periods rather than comparing FY2025 Q4 alone with the cumulative FY2026 Q3 file. FY2025 Q1-Q3 covers October 1, 2024 through June 30, 2025; FY2026 Q1-Q3 covers October 1, 2025 through June 30, 2026.
 
 
-## October 19, 2026: new measurement-sensitivity evidence (not yet archived)
+## October 19–20, 2026: measurement-sensitivity extension (Zenodo v3.7.0 published)
 
 An additional labour-market measurement study investigates the difference between weighting LCA applications and weighting requested new-employment positions. **The positive-position-only check materially changes the original full-sample result**, so claims of invariance across population definitions are not supported.
 
@@ -17,7 +17,7 @@ An additional labour-market measurement study investigates the difference betwee
 
 Read the [October 19 verified console-results and limitations](results/2026-10-19-labour-measurement-extension.md). The optional sensitivity script is [here](analysis/H1B_Optional_Tail_Trim_Sensitivity.R).
 
-**Reproducibility / archive caution:** The RStudio-exported final analysis CSVs numbered 09–19 have now been supplied and locally reviewed. All eleven final numbered analysis CSVs (09–19) are committed under [`results/2026-10-19/`](results/2026-10-19/) and the supplementary R extension is available in [`analysis/`](analysis/). Figure 5 has been uploaded to the repository root as [`H1B_figure5_decomposition.png`](H1B_figure5_decomposition.png). Manuscripts and cover letters are intentionally excluded from this public reproducibility repository at the author's request. These newer results are **not** represented as part of the prior Zenodo v3.6.7 snapshot (DOI `10.5281/zenodo.23353950`). A new Zenodo version should only be published after the included code, analytical outputs, figures and version metadata have been checked together. Manuscripts and cover letters are not part of the intended archive.
+**Archive status:** Zenodo v3.7.0 is published with version DOI [10.5281/zenodo.23486897](https://doi.org/10.5281/zenodo.23486897). All final CSVs 09–19 are under [`results/2026-10-19/`](results/2026-10-19/), the R extensions are under [`analysis/`](analysis/), and [Figure 5](H1B_figure5_decomposition.png) is in the repository root. Manuscripts and cover letters are intentionally excluded. **Note:** this README and `CITATION.cff` were updated on `main` *after* the v3.7.0 release; that published release snapshot remains immutable and may still contain the previous DOI in citation metadata.
 
 ## October 2026 independent audit and robustness update
 
