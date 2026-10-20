@@ -44,8 +44,8 @@ if (any(combined$positions < 0)) stop("Negative NEW_EMPLOYMENT counts detected. 
 # This is a diagnostic identity, NOT a causal attribution.
 level_summary <- combined %>%
   group_by(period, level) %>%
-  summarise(applications = sum(applications), positions = sum(positions),
-            zero_position_lcas = sum(positions == 0), .groups = "drop") %>%
+  summarise(zero_position_lcas = sum(positions == 0),
+            applications = sum(applications), positions = sum(positions), .groups = "drop") %>%
   group_by(period) %>%
   mutate(app_share = applications / sum(applications),
          position_share = positions / sum(positions),
@@ -57,6 +57,16 @@ level_summary <- combined %>%
          app_change_pp = 100 * (app_weighted_share - app_share),
          position_change_pp = 100 * (positions_weighted_share - position_share),
          contrast_pp = position_change_pp - app_change_pp) %>% ungroup()
+# Check zero-position totals against the previously reconciled R outputs.
+zero_expected <- c(
+  "FY2025 Q1-Q3|I" = 28572, "FY2025 Q1-Q3|II" = 105402,
+  "FY2025 Q1-Q3|III" = 62942, "FY2025 Q1-Q3|IV" = 52761,
+  "FY2026 Q1-Q3|I" = 29406, "FY2026 Q1-Q3|II" = 92717,
+  "FY2026 Q1-Q3|III" = 51671, "FY2026 Q1-Q3|IV" = 52124
+)
+zero_keys <- paste(level_summary$period, level_summary$level, sep = "|")
+stopifnot(length(zero_keys) == 8L, !anyNA(zero_expected[zero_keys]),
+          all(level_summary$zero_position_lcas == unname(zero_expected[zero_keys])))
 write.csv(level_summary, file.path(phase_dir, "01_level_measure_contrast.csv"), row.names = FALSE)
 
 # 02. Describe requested-position counts across LCAs; do NOT interpret as actual hiring.
