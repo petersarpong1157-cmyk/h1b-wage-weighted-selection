@@ -155,3 +155,14 @@ The corrected matched-period release is archived on Zenodo under the DOI above.
 The original code and documentation in this repository are licensed under the **MIT License**. See [LICENSE](LICENSE).
 
 The U.S. Department of Labor source data are not redistributed with this repository and are not covered by the repository's MIT license.
+
+
+## Administrative measurement sensitivity extension (21 October 2026)
+
+The following verified analytical output files extend the LCA comparison across all four reported prevailing-wage levels (I–IV) for FY2025 Q1–Q3 and FY2026 Q1–Q3:
+
+- [20_all_wage_levels_measurement.csv](results/2026-10-19/20_all_wage_levels_measurement.csv): application and requested-position shares, weighted shares, differences in percentage points, and zero-position fractions by level and period.
+- [21_three_measurement_definitions.csv](results/2026-10-19/21_three_measurement_definitions.csv): distributions under all-application counts, positive-new-employment application counts, and requested-new-employment position counts.
+- [22_zero_vs_positive_count_decomposition.csv](results/2026-10-19/22_zero_vs_positive_count_decomposition.csv): exact arithmetic decomposition of the application-versus-position distribution-change discrepancy into zero-position inclusion and positive-position count components.
+
+Validation against prior sample totals: FY2025, 401,626 applications and 235,613 requested new-employment positions; FY2026, 351,375 applications and 241,528 positions. All eight wage-level decomposition identities reconcile (reported reconciliation error: zero). Differences are descriptive and must not be interpreted as causal effects, actual USCIS lottery probabilities, or proof that zero-position applications are erroneous. The output-generating R extension for files 20–22 has not yet been committed in this update; the CSVs alone do not establish end-to-end reproducibility.
