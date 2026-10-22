@@ -169,3 +169,29 @@ Validation against prior sample totals: FY2025, 401,626 applications and 235,613
 
 
 To check the saved CSVs without downloading the source workbooks, run `Rscript analysis/Verify_Measurement_CSV_20_to_22.R` from the repository root. This base-R checker validates the sample totals, shares, and decomposition arithmetic in files 20–22; it is not a substitute for rerunning the raw-data pipeline.
+
+
+## October 22, 2026 — Final Monte Carlo reproducibility files (post-v3.8.9 commit)
+
+The 15-setting, 7,500-replication final simulation is now stored on the main branch, including:
+
+- [Original R simulation generator](analysis/H1B_Final_Permutation_Calibration.R), with five data-generating scenarios, three sample sizes, 500 replications each, and 999 permutations per replication.
+- [All 7,500 consolidated replication-level results](results/36_final_permutation_replications.csv).
+- [Final 15-setting simulation summary](results/37_final_permutation_summary.csv).
+- [Base R figure-generation script](analysis/H1B_Generate_Final_Figures.R).
+- [Reconciliation summary](verification/H1B_Final_Verification_Report.csv) and [accessible batch-file audit](verification/H1B_Final_File_Audit.csv).
+- [Reconciliation limitations and research interpretation](verification/MONTE_CARLO_2026-10-22_STATUS.md).
+
+**Critical archival distinction:** GitHub/Zenodo `v3.8.9` (DOI [10.5281/zenodo.23575464](https://doi.org/10.5281/zenodo.23575464)) was published **before** the final consolidated CSV and original simulation R script were committed to `main`. Therefore that DOI **does not automatically archive these subsequent commits**. A new GitHub release/tag and confirmation of a new Zenodo version-specific DOI are required to archive the complete main-branch materials. Do not retag or overwrite the published `v3.8.9` archive.
+
+### Run the archived figures
+
+```sh
+Rscript analysis/H1B_Generate_Final_Figures.R results/37_final_permutation_summary.csv figures
+```
+
+The original simulation generator can be rerun in a fresh R directory, producing `permutation_calibration_final/`. Existing batches are intentionally preserved on reruns. It is not necessary to rerun 7,500 simulations to redraw the published figures.
+
+**Verification caveat:** The consolidated dataset has 7,500 unique records (15 × 500). The 200 accessible original batch CSVs (5,000 replications) reconciled with zero value mismatches. The remaining 2,500 original batch records were not independently reconciled because those batches were not accessible in the audited snapshot. This is a completeness limit of the batch-file audit, not proof of absent simulation runs.
+
+The R permutation test assesses exchangeability of position counts across categories; it is **not** a test of whether a practical 5-percentage-point total-variation threshold is exceeded. The 1–4 wage-level weights are illustrative; DOL prevailing wage levels are not verified USCIS offered-wage selection categories.
