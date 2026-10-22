@@ -1,0 +1,15 @@
+metric,value
+consolidated_rows,7500
+consolidated_unique_keys,7500
+accessible_batch_files,200
+accessible_batch_rows,5000
+accessible_unique_batch_keys,5000
+unavailable_batch_records,2500
+range_failures,0
+unmatched_batch_rows,0
+mismatch_true_distance_pp,0
+mismatch_exchangeability_null,0
+mismatch_distance_pp,0
+mismatch_permutation_p,0
+mismatch_fixed_flag,0
+mismatch_permutation_reject,0
