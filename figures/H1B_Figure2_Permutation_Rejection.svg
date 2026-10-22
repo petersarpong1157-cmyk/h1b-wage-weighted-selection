@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 750">
+<rect width="1300" height="750" fill="white"/>
+<text x="70" y="55" font-size="26" font-family="Arial">Permutation exchangeability test rejection rates: 15 settings</text>
+<text x="70" y="82" font-size="17" font-family="Arial">Wilson Monte Carlo confidence intervals; 500 replications in each setting</text>
+<line x1="65" y1="600" x2="1260" y2="600" stroke="#eee"/>
+<text x="58" y="606" font-size="14" text-anchor="end">0%</text>
+<line x1="65" y1="506" x2="1260" y2="506" stroke="#eee"/>
+<text x="58" y="512" font-size="14" text-anchor="end">20%</text>
+<line x1="65" y1="412" x2="1260" y2="412" stroke="#eee"/>
+<text x="58" y="418" font-size="14" text-anchor="end">40%</text>
+<line x1="65" y1="318" x2="1260" y2="318" stroke="#eee"/>
+<text x="58" y="324" font-size="14" text-anchor="end">60%</text>
+<line x1="65" y1="224" x2="1260" y2="224" stroke="#eee"/>
+<text x="58" y="230" font-size="14" text-anchor="end">80%</text>
+<line x1="65" y1="130" x2="1260" y2="130" stroke="#eee"/>
+<text x="58" y="136" font-size="14" text-anchor="end">100%</text>
+<line x1="92" y1="135.2831321514191" x2="92" y2="130.16597410544276" stroke="#1C497F" stroke-width="3"/>
+<circle cx="92" cy="130.94" r="7" fill="#1C497F"/>
+<text x="92" y="630" text-anchor="middle" font-size="12">n=250</text>
+<line x1="169" y1="133.58344001692944" x2="169" y2="130" stroke="#16826F" stroke-width="3"/>
+<circle cx="169" cy="130" r="7" fill="#16826F"/>
+<text x="169" y="630" text-anchor="middle" font-size="12">n=1000</text>
+<line x1="246" y1="133.58344001692944" x2="246" y2="130" stroke="#BC6B32" stroke-width="3"/>
+<circle cx="246" cy="130" r="7" fill="#BC6B32"/>
+<text x="246" y="630" text-anchor="middle" font-size="12">n=4000</text>
+<line x1="323" y1="587.0128142490278" x2="323" y2="570.2247546954649" stroke="#1C497F" stroke-width="3"/>
+<circle cx="323" cy="580.26" r="7" fill="#1C497F"/>
+<text x="323" y="630" text-anchor="middle" font-size="12">n=250</text>
+<line x1="400" y1="587.7608252268046" x2="400" y2="571.34240995762" stroke="#16826F" stroke-width="3"/>
+<circle cx="400" cy="581.2" r="7" fill="#16826F"/>
+<text x="400" y="630" text-anchor="middle" font-size="12">n=1000</text>
+<line x1="477" y1="587.7608252268046" x2="477" y2="571.34240995762" stroke="#BC6B32" stroke-width="3"/>
+<circle cx="477" cy="581.2" r="7" fill="#BC6B32"/>
+<text x="477" y="630" text-anchor="middle" font-size="12">n=4000</text>
+<line x1="554" y1="576.9387415102938" x2="554" y2="556.0451663150791" stroke="#1C497F" stroke-width="3"/>
+<circle cx="554" cy="568.04" r="7" fill="#1C497F"/>
+<text x="554" y="630" text-anchor="middle" font-size="12">n=250</text>
+<line x1="631" y1="588.5037445137598" x2="631" y2="572.4651569105974" stroke="#16826F" stroke-width="3"/>
+<circle cx="631" cy="582.14" r="7" fill="#16826F"/>
+<text x="631" y="630" text-anchor="middle" font-size="12">n=1000</text>
+<line x1="708" y1="584.7413527375641" x2="708" y2="566.8992174871316" stroke="#BC6B32" stroke-width="3"/>
+<circle cx="708" cy="577.44" r="7" fill="#BC6B32"/>
+<text x="708" y="630" text-anchor="middle" font-size="12">n=4000</text>
+<line x1="785" y1="467.2080365600146" x2="785" y2="428.83625879395885" stroke="#1C497F" stroke-width="3"/>
+<circle cx="785" cy="448.65999999999997" r="7" fill="#1C497F"/>
+<text x="785" y="630" text-anchor="middle" font-size="12">n=250</text>
+<line x1="862" y1="244.50444133147175" x2="862" y2="211.24262139848247" stroke="#16826F" stroke-width="3"/>
+<circle cx="862" cy="226.82" r="7" fill="#16826F"/>
+<text x="862" y="630" text-anchor="middle" font-size="12">n=1000</text>
+<line x1="939" y1="133.58344001692944" x2="939" y2="130" stroke="#BC6B32" stroke-width="3"/>
+<circle cx="939" cy="130" r="7" fill="#BC6B32"/>
+<text x="939" y="630" text-anchor="middle" font-size="12">n=4000</text>
+<line x1="1016" y1="133.58344001692944" x2="1016" y2="130" stroke="#1C497F" stroke-width="3"/>
+<circle cx="1016" cy="130" r="7" fill="#1C497F"/>
+<text x="1016" y="630" text-anchor="middle" font-size="12">n=250</text>
+<line x1="1093" y1="133.58344001692944" x2="1093" y2="130" stroke="#16826F" stroke-width="3"/>
+<circle cx="1093" cy="130" r="7" fill="#16826F"/>
+<text x="1093" y="630" text-anchor="middle" font-size="12">n=1000</text>
+<line x1="1170" y1="133.58344001692944" x2="1170" y2="130" stroke="#BC6B32" stroke-width="3"/>
+<circle cx="1170" cy="130" r="7" fill="#BC6B32"/>
+<text x="1170" y="630" text-anchor="middle" font-size="12">n=4000</text>
+<text x="169" y="671" font-size="15" font-family="Arial" text-anchor="middle">Category dependent zeros</text>
+<text x="400" y="671" font-size="15" font-family="Arial" text-anchor="middle">High equal zeros</text>
+<text x="631" y="671" font-size="15" font-family="Arial" text-anchor="middle">Low equal zeros</text>
+<text x="862" y="671" font-size="15" font-family="Arial" text-anchor="middle">Near 5pp</text>
+<text x="1093" y="671" font-size="15" font-family="Arial" text-anchor="middle">Unequal positive counts</text>
+<text x="70" y="718" font-size="15">Permutation null: exchangeability of counts across categories (not the practical 5pp flag).</text>
+</svg>
